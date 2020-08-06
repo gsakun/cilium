@@ -140,7 +140,10 @@ func (c *CNPStatusUpdateContext) prepareUpdate(cnp *types.SlimCNP, scopedLog *lo
 		return
 	}
 
-	serverRule = cnp
+	// Make a copy since the rule is a pointer, and any of its fields
+	// which are also pointers could be modified outside of this
+	// function or with the 'cnp.Parse()' which can also overwrite fields.
+	serverRule = cnp.DeepCopy()
 	_, err = cnp.Parse()
 	if err != nil {
 		log.WithError(err).WithField(logfields.Object, logfields.Repr(serverRule)).
