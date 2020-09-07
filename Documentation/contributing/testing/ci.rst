@@ -141,6 +141,8 @@ illustrating which subset of tests the job runs.
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------+
 | `Cilium-Pr-Ginkgo-Test-k8s <https://jenkins.cilium.io/job/Cilium-PR-Ginkgo-Tests-k8s/>`_                | test-missed-k8s   | No                 |
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------+
+| `Cilium-PR-Ginkgo-Tests-Validated <https://jenkins.cilium.io/job/Cilium-PR-Ginkgo-Tests-Validated/>`_   | restart-ginkgo    | Yes                |
++---------------------------------------------------------------------------------------------------------+-------------------+--------------------+
 | `Cilium-Nightly-Tests-PR <https://jenkins.cilium.io/job/Cilium-PR-Nightly-Tests-All/>`_                 | test-nightly      | No                 |
 +---------------------------------------------------------------------------------------------------------+-------------------+--------------------+
 | `Cilium-PR-Doc-Tests <https://jenkins.cilium.io/view/all/job/Cilium-PR-Doc-Tests/>`_                    | test-docs-please  | No                 |
